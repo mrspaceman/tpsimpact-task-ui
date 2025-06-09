@@ -1,7 +1,8 @@
-package uk.co.droidinactu.tpximpacttask.urlshortener.dto;
+package uk.co.droidinactu.tpsimpactui;
 
-import jakarta.validation.constraints.NotBlank;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,13 +13,14 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ShortenUrlRequest {
 
     /**
      * The full URL to be shortened.
      * This field is required.
      */
-    @NotBlank(message = "Full URL is required")
     private String fullUrl;
 
     /**

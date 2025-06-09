@@ -1,4 +1,4 @@
-package uk.co.droidinactu.tpximpacttask.urlshortener.dto;
+package uk.co.droidinactu.tpsimpactui;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

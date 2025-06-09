@@ -1,4 +1,4 @@
-package uk.co.droidinactu.tpximpacttask.urlshortener.dto;
+package uk.co.droidinactu.tpsimpactui;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UrlMappingDto {
+public class UrlMapping {
 
     /**
      * The alias/short identifier for the URL.
